@@ -1,0 +1,537 @@
+/* Replace with your CSS Code 
+(Leave empty if not needed) */                                           
+
+
+body {
+    margin: 0;
+    background: #f5f5f5;
+    color: #4e4e4e;
+    font: 18px/27px 'Arial', sans-serif;
+    text-align: center;
+  }
+  
+
+ 
+  h4,
+  h5,
+  h6 {
+    color: #1e1e1e;
+  }
+  
+  /*header+nav*/
+  
+  
+  /*button*/
+  
+  
+
+/*immagine*/
+
+.background-image {
+    position: relative;
+    height: 650px; /* Altezza desiderata del contenitore */
+    text-align: center;
+    color: white; /* Colore del testo */
+}
+
+.background-image::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://suvidhafoundationedutech.org/img/Suvidha-5.jpg"); 
+    background-size: cover;
+    background-position: center;
+    filter: brightness(50%); /* Imposta la luminosità dell'immagine al 50% */
+}
+
+h1 {
+    font-size:50px; /* Dimensione del titolo */
+    position: absolute;
+    text-transform: capitalize;
+    color: #2183bb;
+    top: 50%;
+    left: 12%;
+    transform: translate(-50%, -50%); 
+    /* transition: ; */
+    /* Centra il titolo sia verticalmente che orizzontalmente */
+    z-index: 1;
+}
+
+  
+/*siamo al 2° pezzo (about)*/
+
+/* Contenitore della flip card */
+  
+.flip-card {
+  background-color: transparent;
+  width: 400px; /*larghrzza */
+  height: 300px;  /*altezza*/
+  perspective: 1000px; /* Aggiunge la profondità */
+  display: inline-block;
+  margin: 20px;
+}
+
+/* Interno della flip card */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* Lato frontale della flip card */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden; /* Nasconde il lato nascosto */
+}
+
+/* Lato frontale */
+.flip-card-front {
+  background-color: #bbb; /* Colore di sfondo */
+  color: rgb(255, 255, 255); /* Colore del testo */
+}
+
+/* Lato posteriore */
+.flip-card-back {
+  background-color: #000; /* Colore di sfondo */
+  color: white; /* Colore del testo */
+  transform: rotateY(180deg); /* Ruota di 180 gradi */
+  
+}
+
+/* Quando passi sopra la flip card, applica l'effetto flip */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Immagine all'interno della flip card */
+.card-image {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.flip-card-back p{
+  margin: 20px;
+}
+
+/*3° pezzo (fasi)*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+}
+
+.container_intern {
+  max-width: 800px;
+  height: 100vh;
+  background: url("https://www.shutterstock.com/shutterstock/photos/2284126663/display_1500/stock-photo-data-science-and-big-data-technology-scientist-computing-analysing-and-visualizing-complex-data-2284126663.jpg") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #02886f;
+  text-align: center;
+}
+
+.subtitle {
+  color: #02886f;
+}
+
+.phase {
+  margin-bottom: 20px;
+}
+
+.phase p {
+  text-align: justify;
+}
+
+
+
+/*4° pezzo (sintomi)*/
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+} */
+
+.container_intern {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  color: #02886f;
+  text-align: center;
+}
+
+.subtitle {
+  color: #02886f;
+}
+
+.subtitle::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 2px;
+  background-color: #02886f;
+  margin: 10px auto;
+}
+
+.phase {
+  margin-bottom: 20px;
+}
+
+.phase p {
+  text-align: justify;
+}
+
+/*4° pezzo (sintomi)*/
+
+.symptoms-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+ 
+}
+
+.symptom {
+  width: calc(33.33% - 40px);
+  margin: 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  border: 2px solid #02886f; /* bordo */
+  text-align: center;
+}
+
+.symptom:hover {
+  transform: translateY(-5px);
+}
+
+.symptom-icon {
+  font-size: 2em;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.symptom-description {
+  font-size: 1.1em;
+  line-height: 1.5;
+}
+
+/*trattamento ultimo pezzo*/
+
+
+
+.container_intern {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  overflow: hidden;
+  width: calc(50% - 40px);
+  max-width: 500px;
+}
+
+.content {
+  padding: 20px;
+}
+
+
+
+
+
+
+.apply {
+    width: 150px;
+    height: 60px;
+    padding: 12px 20px;
+    /* margin-top: 30rem; */
+    border: 3px solid #315cfd;
+    border-radius:  12px ;
+    transition: all 0.3s;
+    
+    cursor: pointer;
+    background: white;
+    font-size: 1.2em;
+    font-weight: 550;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .apply:hover {       
+    background: #315cfd;
+    color: white;
+    list-style: none;
+    font-size: 1.5em;
+  }
+
+
+
+
+
+  .mid1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 12px;
+    height: 300px;
+    background-color: #149CEA;
+    border-radius: 10px;
+    
+  }
+  .mid1_sec>p{
+    font-size: 50px;
+  }
+  .mid1_sec>span{
+    font-size: 25px;
+  }
+
+
+
+
+
+
+.main_card_members{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+  .card_member {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background: linear-gradient(-45deg, #f89b29 0%, #ff0f7b 100% );
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card_member svg {
+    width: 48px;
+    fill: #333;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card_member:hover {
+    transform: rotate(-5deg) scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+  .card_member:hover .card__content {
+    transform: translate(-50%, -50%) rotate(0deg);
+    opacity: 1;
+  }
+  
+  .card__title {
+    margin: 0;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #333;
+    font-weight: 700;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #777;
+    line-height: 1.4;
+  }
+  .title_person{
+    font-size: 34px;
+    color: #2183bb;
+    /* margin-top: 20px; */
+  }
+  .title_desc{
+    font-size: 50px;
+    text-align: center;
+  margin: 30px 0;
+  }
+/*   
+  .card_member:hover svg {
+    scale: 0;
+    transform: rotate(-45deg);
+  } */
+
+  .ccc{
+    display: inline-flex;
+    justify-content: space-between;
+  }
+  
+
+  .card_mar_cen{
+    display: flex;
+   
+    margin-top: 23px;
+    gap: 12px;
+    /* flex-wrap: wrap; */
+  }
+
+  
+
+  .testimonial{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 12px;
+    color: #2183bb;
+
+  }
+
+  .card_main {
+    max-width: 300px;
+    border-radius: 0.5rem;
+    background-color: #fff;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    border: 1px solid transparent;
+  }
+  
+  .card_main a {
+    text-decoration: none
+  }
+  
+  .content {
+    padding: 1.1rem;
+  }
+  
+ 
+  .image>img{
+    width: 100%;
+    height:150px;
+    border-radius: 12px;
+  }
+  
+  
+  
+  .title {
+    color: #2183bb;
+    /* font-size: 20px; */
+    font-size: 3rem;
+    line-height: 1.75rem;
+    font-weight: 600;
+    text-align: center;
+
+    
+  }
+  
+  .descrip {
+    margin-top: 0.5rem;
+    color: #6B7280;
+    font-size: 0.875rem;
+    overflow: scroll;
+    line-height: 1.25rem;
+  }
+  
+  .action {
+    display: inline-flex;
+    margin-top: 1rem;
+    color: #ffffff;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #2563EB;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  
+  .action span {
+    transition: .3s ease;
+  }
+  
+  .action:hover span {
+    transform: translateX(4px);
+  }
+  @media screen and (max-width:475px) {
+    .container_intern{
+      height: auto;
+    }
+    .symptom{
+      width: 300px;
+    }
+    .mid1_sec>p{
+      font-size: 20px;
+    }
+    .mid1_sec>span{
+      font-size: 16px;
+    }
+    .title_desc{
+      font-size: 20px;
+    }
+    .main_card_members{
+      display: flex;
+      flex-direction: column;
+      margin: 10px 90px;
+      gap: 20px;
+
+    }
+    .testimonial{
+      font-size: 20px;
+    }
+    .ccc{
+      display: flex;
+      flex-direction: row;
+    }
+  }
+  @media screen and (min-width:476px) and (max-width:677px) {
+    .container_intern{
+      height: auto;
+    }
+    .testimonial{
+      font-size: 20px;
+    }
+  }
+  @media screen and (min-width:678px) {
+    .container_intern{
+      height: auto;
+    }
+  }
