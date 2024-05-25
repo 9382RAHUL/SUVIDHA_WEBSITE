@@ -79,7 +79,7 @@
 
 .qrcode {
   width: 30rem;
-  height: 20rem;
+  height: auto;
   margin-left: 20rem;
   display: flex;
   /* place-items: ; */

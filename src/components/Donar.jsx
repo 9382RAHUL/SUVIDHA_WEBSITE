@@ -80,7 +80,7 @@ const Donar = () => {
       <hr />
       <section className="last_donar_part">
         <b className="last_donar_part_heading">Contribute for the future, for the society</b>
-        <img src="./QR_DONATE.png" alt="" className="qrcode" />
+        <img src="./DONATE_IMAGE.jpg" alt="" className="qrcode" />
         <p className="desc">Let's join hands to eradicate hunger, each contribution a beacon of hope in the darkness. Together, our donations can nourish bodies and souls, weaving a brighter future for all. In this shared journey of compassion, let's stand as pillars of support, casting aside hunger's shadows with our collective kindness.</p>
       </section>
     </div>
